@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import '../../Styles/sass/main.css'
 
 function Navbar() {
-  return (<>
-    <div>Navbar</div>
-    <a href="#contacs" className="contats">Contacts</a>
-    </>
-  )
+	return (
+		<div className='navbar'>
+			<div>Navbar</div>
+			<a href="#contacs" className="contats">
+				Contacts
+			</a>
+		</div>
+	);
 }
 
-export default Navbar
+export default Navbar;
