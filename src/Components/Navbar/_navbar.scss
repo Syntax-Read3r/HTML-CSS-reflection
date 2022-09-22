@@ -1,0 +1,44 @@
+.navbar {
+    
+    width: 100%;
+    &__top {
+        background-color: red;
+        height: 111px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: px 0 26px 87px;
+
+        &--logo-container {
+
+            margin-right: 86px;
+
+        };
+
+        &--button-one{
+            margin: 0 20px 0 81px
+        }
+
+        &--button-two{
+            margin: 0 23px 0 0px
+        }
+
+        &--search {
+            margin-right: 20px;
+        }
+
+        &--menu {
+
+        }
+    }
+
+    &__button {
+        background-color: blue;
+        height: 100px;
+    }
+}
+
+.logo {
+    width: 402 x 70px;
+    vertical-align: middle;
+}

@@ -1,0 +1,23 @@
+.btn {
+    font-family: $default-font;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transdorm 0.2s ease-in-out;
+    -webkit-transition: transdorm 0.2s ease-in-out;
+    -moz-transition: transdorm 0.2s ease-in-out;
+    -ms-transition: transdorm 0.2s ease-in-out;
+    -o-transition: transdorm 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-2px);
+        background-color: aqua;
+    }
+}
+
+// Button colors and styles
+
+.btn--primary--solid {
+    background-color: $button--primary;
+    ;
+}
