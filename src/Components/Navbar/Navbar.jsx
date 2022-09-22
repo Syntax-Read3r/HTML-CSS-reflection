@@ -1,13 +1,13 @@
 import React from "react";
-import '../../Styles/sass/main.css'
+import "../../Styles/sass/main.css";
 
 function Navbar() {
 	return (
-		<div className='navbar'>
-			<div>Navbar</div>
-			<a href="#contacs" className="contats">
-				Contacts
-			</a>
+		<div className="navbar">
+			{/* Top section of Navbar */}
+			<div className="navbar__top"></div>
+			{/* Bottom section of Navbar */}
+			<div className="navbar__bottom"></div>
 		</div>
 	);
 }

@@ -1,5 +1,12 @@
 .navbar {
     width: 100%;
-    height: 60px;
-    background-color: $primary-color;
+    &__top {
+        background-color: red;
+        height: 111px;
+    }
+
+    &__bottom {
+        background-color: blue;
+        height: 100px;
+    }
 }

@@ -1,5 +1,11 @@
 .navbar {
   width: 100%;
-  height: 60px;
-  background-color: #050872;
+}
+.navbar__top {
+  background-color: red;
+  height: 111px;
+}
+.navbar__bottom {
+  background-color: blue;
+  height: 100px;
 }/*# sourceMappingURL=main.css.map */
