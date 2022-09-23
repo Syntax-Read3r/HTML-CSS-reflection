@@ -1,6 +1,9 @@
 .btn {
     font-family: $default-font;
     font-weight: 400;
+    color: white;
+    height: 60px;
+    border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
     transition: transdorm 0.2s ease-in-out;
@@ -8,16 +11,53 @@
     -moz-transition: transdorm 0.2s ease-in-out;
     -ms-transition: transdorm 0.2s ease-in-out;
     -o-transition: transdorm 0.2s ease-in-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    letter-spacing: .4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
 
-    &:hover {
-        transform: translateY(-2px);
-        background-color: aqua;
+// Navbar buttons
+
+    &--primary--nav {
+        background-color: $navbar--button--one;
+        margin-right: 20px;
+        width: 148px;
+    
+        &:hover {
+            background-color: $navbar--button--one-hover;
+        };
     }
+
+    &--secondary--nav {
+        background-color: $navbar--button--two;
+        margin-right: 20px;
+        width: 148px;
+    
+        &:hover {
+            background-color: $navbar--button--two-hover;
+        };
+    }
+
 }
 
-// Button colors and styles
 
-.btn--primary--solid {
-    background-color: $button--primary;
-    ;
+.btn--search--nav {
+    background-color: $button--search--nav;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    
+ 
+
+
+
+    &:hover {
+        background-color: $button--search--nav-hover;
+    };
 }

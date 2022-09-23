@@ -2,10 +2,9 @@ import React from "react";
 import "../Styles/sass/main.css";
 
 const STYLES = [
-    "btn--primary--solid",
-    "btn--primary--outline",
-    "btn--warning--solid",
-    "btn--warning--outline",
+    "btn--primary--nav",
+    "btn--secondary--nav",
+    "btn--search--nav",
     "btn--danger--solid",
     "btn--danger--outline",
     "btn--success--solid",
