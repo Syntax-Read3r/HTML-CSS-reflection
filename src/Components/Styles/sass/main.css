@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+.navbar__top--menu.open .navbar__top--menu--burger {
+  transform: translateX(-30px);
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar__top--menu.open .navbar__top--menu--burger:before {
+  transform: rotate(45deg) translate(20px, -20px);
+  -webkit-transform: rotate(45deg) translate(20px, -20px);
+  -moz-transform: rotate(45deg) translate(20px, -20px);
+  -ms-transform: rotate(45deg) translate(20px, -20px);
+  -o-transform: rotate(45deg) translate(20px, -20px);
+}
+
+.navbar__top--menu.open .navbar__top--menu--burger:after {
+  transform: rotate(-45deg) translate(20px, 20px);
+  -webkit-transform: rotate(-45deg) translate(20px, 20px);
+  -moz-transform: rotate(-45deg) translate(20px, 20px);
+  -ms-transform: rotate(-45deg) translate(20px, 20px);
+  -o-transform: rotate(-45deg) translate(20px, 20px);
+}
+
 .btn {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -41,6 +67,72 @@
 }
 .navbar__top--search {
   margin-right: 20px;
+}
+.navbar__top--menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  border: 3px solid #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.navbar__top--menu--burger {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.navbar__top--menu--burger:before, .navbar__top--menu--burger:after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.navbar__top--menu--burger:before {
+  transform: translateY(-14px);
+  -webkit-transform: translateY(-14px);
+  -moz-transform: translateY(-14px);
+  -ms-transform: translateY(-14px);
+  -o-transform: translateY(-14px);
+}
+.navbar__top--menu--burger:after {
+  transform: translateY(14px);
+  -webkit-transform: translateY(14px);
+  -moz-transform: translateY(14px);
+  -ms-transform: translateY(14px);
+  -o-transform: translateY(14px);
 }
 .navbar__button {
   background-color: blue;

@@ -4,8 +4,33 @@ import logo from "../../Assets/Images/logo2.png";
 import Button from "../Button/Button";
 import {MdMouse} from "react-icons/md"
 import {GiPaperPlane} from "react-icons/gi"
+import {GiMagnifyingGlass} from "react-icons/gi"
 
 export default function Navbar() {
+
+	const checkMenuButton = (e) => {
+		e.preventDefault();
+		const menuButton = document.querySelector(".navbar__top--menu");
+		menuButton.addEventListener("click", checkEvent);
+	};
+
+	const checkEvent = (e) => {
+		e.preventDefault();
+		console.log(e.target);
+		const menuButton = document.querySelector(".navbar__top--menu");
+		let menuOpen = menuButton.classList.contains("open");
+		if (!menuOpen) {
+			menuButton.classList.add("open");
+			menuOpen = true;
+			console.log("menuOpen: ", menuOpen);
+		} else {
+			menuButton.classList.remove("open");
+			menuOpen = false;
+			console.log("menuOpen: ", menuOpen, 'closed');
+		}
+	}
+
+
 	return (
 		<div className="navbar">
 			{/* Top section of Navbar */}
@@ -31,11 +56,21 @@ export default function Navbar() {
 
 					{/* TS Child FOUR */}
 					<div className="navbar__top--search">
+						<form method='GET' action="#netmatters" acceptCharset='UTF-8' className='navbar__top--search-form'>
 						<input type="text" placeholder="Search..." className="navbar__top--search--input" />
+						<button type="submit" >
+							<GiMagnifyingGlass fontSize="23.008px" color="#fff" />
+						</button>
+						</form>
+
 					</div>
 
 					{/* TS Child FIVE */}
-					<div className="navbar__top--menu"></div>
+					<div onClick={checkMenuButton} className="navbar__top--menu" >
+						<div className="navbar__top--menu--burger">
+
+						</div>
+					</div>
 
 			</div>
 

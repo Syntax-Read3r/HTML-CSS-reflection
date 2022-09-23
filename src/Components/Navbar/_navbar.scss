@@ -27,9 +27,79 @@
             margin-right: 20px;
         }
 
-        &--menu {
+        // Menu Hamburguer
 
-        }
+        &--menu {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            border: 3px solid #fff;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+
+            &--burger {
+                width: 35px;
+                height: 5px;
+                background-color: #fff;
+                transition: all 0.5s ease-in-out;
+                -webkit-transition: all 0.5s ease-in-out;
+                -moz-transition: all 0.5s ease-in-out;
+                -ms-transition: all 0.5s ease-in-out;
+                -o-transition: all 0.5s ease-in-out;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 35px;
+                    height: 5px;
+                    background-color: #fff;
+                    transition: all 0.5s ease-in-out;
+                    -webkit-transition: all 0.5s ease-in-out;
+                    -moz-transition: all 0.5s ease-in-out;
+                    -ms-transition: all 0.5s ease-in-out;
+                    -o-transition: all 0.5s ease-in-out;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                }
+
+                &:before {
+                    transform: translateY(-14px);
+                    -webkit-transform: translateY(-14px);
+                    -moz-transform: translateY(-14px);
+                    -ms-transform: translateY(-14px);
+                    -o-transform: translateY(-14px);
+}
+
+                &:after {
+                    transform: translateY(14px);
+                    -webkit-transform: translateY(14px);
+                    -moz-transform: translateY(14px);
+                    -ms-transform: translateY(14px);
+                    -o-transform: translateY(14px);
+}
+}
+}
     }
 
     &__button {
