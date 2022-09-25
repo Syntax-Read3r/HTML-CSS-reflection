@@ -71,6 +71,11 @@
   border: none;
   width: 60px;
   height: 60px;
+  border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -ms-border-radius: 0px 5px 5px 0px;
+  -o-border-radius: 0px 5px 5px 0px;
 }
 .btn--search--nav:hover {
   background-color: #6e6f73;
@@ -173,4 +178,48 @@
 .logo {
   width: 402 x 70px;
   vertical-align: middle;
+}
+
+.navbar__top--search--input {
+  height: 56px;
+  border: none;
+  width: 240px;
+  margin-bottom: 3.5px;
+}
+
+.btn--search--nav {
+  margin-bottom: 3.5;
+}
+
+.sideMenu {
+  height: 100%;
+  width: 320px;
+  position: absolute;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.sideMenu__heading {
+  background-color: #333645;
+  padding: 20px;
+}
+.sideMenu__heading--anchor {
+  text-decoration: none;
+  color: #deffff;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.sideMenu__heading--list-item {
+  list-style: none;
+  width: 320px;
+}
+.sideMenu__heading--list-item--anchor {
+  background-color: #262834;
+  color: #deffff;
+  text-decoration: none;
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */

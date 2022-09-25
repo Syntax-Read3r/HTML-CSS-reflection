@@ -1,0 +1,39 @@
+.sideMenu {
+    height: 100%;
+    width: 320px;
+    position: absolute;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+
+    &__heading {
+        background-color: $sidemenu--header--bg;
+        padding: 20px;
+
+        &--anchor {
+            text-decoration: none;
+            color: $sidemenu--header--text;
+            font-size: $sidemenu--header--font;
+            line-height: 16px;
+            letter-spacing: .4px;
+            text-transform: uppercase;
+        }
+
+        &--list {
+            &-item {
+                list-style: none;
+                width: 320px;
+
+                &--anchor {
+                    background-color: $sidemenu--child--bg;
+                    color: $sidemenu--header--text;
+                    text-decoration: none;
+                    padding: 20px;
+                }
+            }
+        }
+        }
+    }
+

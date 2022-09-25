@@ -52,12 +52,14 @@
     border: none;
     width: 60px;
     height: 60px;
-    
- 
-
-
-
-    &:hover {
+    border-radius: 0px 5px 5px 0px;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    -ms-border-radius: 0px 5px 5px 0px;
+    -o-border-radius: 0px 5px 5px 0px;
+    &:hover{
         background-color: $button--search--nav-hover;
     };
 }
+
+// Button Sizes

@@ -13,8 +13,11 @@ const STYLES = [
 ]
 
 const SIZES = [
+    'btn--nav',
+    'btn--nav--small',
     "btn--medium",
-    "btn--wide",
+    "btn--large",
+    'btn--xlarge',
 ]
 
 const Button = ({children, type, onClick, buttonStyle, buttonSize}) => {

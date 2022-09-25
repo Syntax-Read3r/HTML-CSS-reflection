@@ -25,6 +25,7 @@
 
         &--search {
             margin-right: 20px;
+            
         }
 
         // Menu Hamburguer
@@ -111,4 +112,17 @@
 .logo {
     width: 402 x 70px;
     vertical-align: middle;
+}
+
+// Form CSS
+
+.navbar__top--search--input {
+    height: 56px;
+    border: none;
+    width: 240px;
+    margin-bottom: 3.5px;
+}
+
+.btn--search--nav {
+    margin-bottom: 3.5;
 }
