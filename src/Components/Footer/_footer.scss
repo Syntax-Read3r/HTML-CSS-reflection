@@ -1,10 +1,12 @@
 .footer {
+    display: flex;
+    flex-direction: column;
     background-color: #333645;
+
 }
 
 .container { 
 
-    margin-top: 30px;
     width: 90%;
     margin: 0 auto;
     padding: 0 15px;
@@ -16,13 +18,28 @@
         &--services {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-gap: -30px;
+
+            &--service--item {
+                text-decoration: none;
+                color: #fff;
+            }
         }
         &--offices {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
 
+
             &--location {
                 margin-bottom: 30px;
+                color: #fff
+                
+            
+            }
+
+            &--location--tel {
+                text-decoration: none;
+                color: #fff;
             }
         }
 
@@ -40,11 +57,93 @@
         // Bootom Row of footer
 
     &__bottom-row {
+        margin: 0px 0px 30px 0;
+        height: 30px;
+
         &--content {
+            margin-top: 2px;
             display: flex;
             justify-content: space-between;
-            background-color: red;
+            align-items: center;
+            color: #fff; 
 
+            
+            &--copyright {
+                &--linkItem {
+                    text-decoration: none;
+                    color: #fff;
+                    margin-left: 10px;
+                }
+
+                &--linkItem:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            // socials
+
+            &--socials {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              
+                  
+                &--icon {
+                font-size: .9rem;
+                    text-decoration: none;
+                    color: #fff;
+                    max-height: 38px;
+
+                    &--one {
+                        content: inherit;
+                        padding: 10px                    ;
+                        
+                        }
+                    &--one:hover {
+                        background-color: #1877f2;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+}
+                    &--two {
+                        padding: 10px;
+
+                    }
+                    &--two:hover {
+                        background-color: #1da1f2;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+                    &--three {
+                        padding: 10px;
+                    }
+                    &--three:hover {
+                        background-color: #cd201f;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+                    &--four {
+                        padding: 10px;
+                    }
+                    &--four:hover {
+                        background-color: #0077b5;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+
+                }
+            }
         }
     }
 

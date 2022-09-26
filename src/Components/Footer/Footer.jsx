@@ -17,29 +17,29 @@ function Footer() {
                             About Netmatters
                         </h4>
                         <ul>
-                            <li className='container__top-row--services--service--item'>
-                                <a href="https://www.netmatters.co.uk/news" >News</a>
+                            <li className='container__top-row--services--service'>
+                                <a href="#News" className='container__top-row--services--service--item'>News</a>
                             </li>
-                            <li  className='container__top-row--services--service--item'>
-                                <a href="https://www.netmatters.co.uk/our-careers" >Our Careers</a>
+                            <li  className='container__top-row--services--service'>
+                                <a href="#Our Service" className='container__top-row--services--service--item'>Our Careers</a>
                             </li>
-                            <li   className='container__top-row--services--service--item'>
-                                <a href="https://www.netmatters.co.uk/team" >Our Team</a>
+                            <li   className='container__top-row--services--service'>
+                                <a href="#Our Team" className='container__top-row--services--service--item'>Our Team</a>
                             </li>
-                            <li   className='container__top-row--services--service--item'>
-                                <a href="https://www.netmatters.co.uk/privacy-policy" >Privacy Policy</a>
+                            <li   className='container__top-row--services--service'>
+                                <a href="#Privacy" className='container__top-row--services--service--item' >Privacy Policy</a>
                             </li>
-                            <li   className='container__top-row--services--service--item'>
-                                <a href="https://www.netmatters.co.uk/cookie-policy" >Cookie Policy</a>
+                            <li   className='container__top-row--services--service'>
+                                <a href="#Cookie" className='container__top-row--services--service--item' >Cookie Policy</a>
                             </li>
-                            <li   className='container__top-row--services--service--item'>
-                                <a href="https://www.netmatters.co.uk/terms-and-conditions" >Terms &amp; Conditions</a>
+                            <li   className='container__top-row--services--service'>
+                                <a href="#Team" className='container__top-row--services--service--item'>Terms &amp; Conditions</a>
                             </li>
-                            <li   className='container__top-row--services--service--item'>
-                                <a href="https://www.netmatters.co.uk/our-culture/environmental-policy" >Environmental Policy</a>
+                            <li   className='container__top-row--services--service'>
+                                <a href="#Environmental" className='container__top-row--services--service--item'>Environmental Policy</a>
                             </li>
-                            <li   className='container__top-row--services--service--item'>
-                                <a href="https://www.netmatters.co.uk/contact-us" >Contact Us</a>
+                            <li   className='container__top-row--services--service'>
+                                <a href="#Contact" className='container__top-row--services--service--item' >Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -48,26 +48,26 @@ function Footer() {
                             Our Services
                         </h4>
                         <ul>
-                            <li  className='container__top-row--services--service--item'>
-                                <a href="#Bespoke" >Bespoke Software</a>
+                            <li  className='container__top-row--services--service'>
+                                <a href="#Bespoke" className='container__top-row--services--service--item'>Bespoke Software</a>
                             </li>
-                            <li  className='container__top-row--services--service--item'>
-                                <a href="#IT" >IT Support</a>
+                            <li  className='container__top-row--services--service'>
+                                <a href="#IT" className='container__top-row--services--service--item'>IT Support</a>
                             </li>
-                            <li  className='container__top-row--services--service--item'>
-                                <a href="#Digital" >Digital Marketing</a>
+                            <li  className='container__top-row--services--service'>
+                                <a href="#Digital" className='container__top-row--services--service--item'>Digital Marketing</a>
                             </li>
-                            <li  className='container__top-row--services--service--item'>
-                                <a href="#Telecos" >Telecoms Services</a>
+                            <li  className='container__top-row--services--service'>
+                                <a href="#Telecos" className='container__top-row--services--service--item' >Telecoms Services</a>
                             </li>
-                            <li  className='container__top-row--services--service--item'>
-                                <a href="#Web Design" >Web Design</a>
+                            <li  className='container__top-row--services--service'>
+                                <a href="#Web Design"  className='container__top-row--services--service--item' >Web Design</a>
                             </li>
-                            <li  className='container__top-row--services--service--item'>
-                                <a href="#Cyber" >Cyber Security</a>
+                            <li  className='container__top-row--services--service'>
+                                <a href="#Cyber"  className='container__top-row--services--service--item' >Cyber Security</a>
                             </li>
-                            <li  className='container__top-row--services--service--item'>
-                                <a href="#Developer" >Developer Training</a>
+                            <li  className='container__top-row--services--service'>
+                                <a href="#Developer"  className='container__top-row--services--service--item'>Developer Training</a>
                             </li>
                         </ul>
                     </div>
@@ -97,7 +97,7 @@ function Footer() {
                                 &nbsp;
                             </li>
                             <li >
-                                Tel: <a href="tel:#tel">01223 37 57 72</a>
+                                Tel: <a href="tel:#tel" className="container__top-row--offices--location--tel">01223 37 57 72</a>
                             </li>
                         </ul>
                     </div>
@@ -125,7 +125,7 @@ function Footer() {
                                 &nbsp;
                             </li>
                             <li>
-                                Tel: <a href="tel:01603704020">01603 70 40 20</a>
+                                Tel: <a href="tel:01603704020" className="container__top-row--offices--location--tel">01603 70 40 20</a>
                             </li>
                         </ul>
                     </div>
@@ -153,7 +153,7 @@ function Footer() {
                                 &nbsp;
                             </li>
                             <li >
-                                Tel: <a href="tel:01493603204">01493 60 32 04</a>
+                                Tel: <a href="tel:01493603204" className="container__top-row--offices--location--tel">01493 60 32 04</a>
                             </li>
                         </ul>
                     </div>
@@ -165,21 +165,21 @@ function Footer() {
                 </div>
                 <div className="container__bottom-row--content">
                     <div className="container__bottom-row--content--copyright">
-                        © Copyright Netmatters 2022.<br className="BR_77" /> All rights reserved. <span className="SPAN_78">-</span>
-                        <ul className="UL_79">
-                            <li className="LI_80">
-                                <a href="#Sitemap" className="A_81">Sitemap</a>
-                            </li>
-                        </ul>
+                        <p>© Copyright Netmatters 2022. All rights reserved. -  <a href="#Sitemap" className="container__bottom-row--content--copyright--linkItem">Sitemap</a></p>
+             
                     </div>
                     <div className="container__bottom-row--content--socials">
-                        <a href="https://en-gb.facebook.com/netmatters/" rel="noopener noreferrer" className="container__bottom-row--content--socials--item"><ImFacebook/></a>
+                        <a href="https://en-gb.facebook.com/netmatters/" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><ImFacebook
+                        className="container__bottom-row--content--socials--icon--one"/></a>
                         
-                        <a href="https://twitter.com/netmattersltd" rel="noopener noreferrer" className="container__bottom-row--content--socials--item"><BsTwitter/></a> 
+                        <a href="https://twitter.com/netmattersltd" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><BsTwitter
+                        className="container__bottom-row--content--socials--icon--two"/></a> 
                         
-                        <a href="https://www.instagram.com/netmattersltd/" rel="noopener noreferrer" className="container__bottom-row--content--socials--item"><GrInstagram/></a> 
+                        <a href="https://www.instagram.com/netmattersltd/" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><GrInstagram
+                        className="container__bottom-row--content--socials--icon--three"/></a> 
                         
-                        <a href="https://www.linkedin.com/company/netmatters-ltd/" rel="noopener noreferrer" className="container__bottom-row--content--socials--item"><GrLinkedinOption/></a>
+                        <a href="https://www.linkedin.com/company/netmatters-ltd/" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><GrLinkedinOption
+                        className="container__bottom-row--content--socials--icon--four" /></a>
                     </div>
                 </div>
             </div>
