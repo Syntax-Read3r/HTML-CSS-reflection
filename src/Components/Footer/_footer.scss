@@ -1,0 +1,52 @@
+.footer {
+    background-color: #333645;
+}
+
+.container { 
+
+    margin-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    // Top Row of footer
+    &__top-row {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        &--services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        &--offices {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            &--location {
+                margin-bottom: 30px;
+            }
+        }
+
+        & h4 {
+            
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-top: 30px;
+            margin-bottom: 26px;
+        }
+
+    }
+
+        // Bootom Row of footer
+
+    &__bottom-row {
+        &--content {
+            display: flex;
+            justify-content: space-between;
+            background-color: red;
+
+        }
+    }
+
+    
+}

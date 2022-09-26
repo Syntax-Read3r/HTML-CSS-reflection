@@ -1,5 +1,9 @@
 import React from 'react'
 import "../Styles/sass/main.css";
+import {ImFacebook} from "react-icons/im"
+import {BsTwitter} from "react-icons/bs"
+import {GrInstagram} from "react-icons/gr"
+import {GrLinkedinOption} from "react-icons/gr"
 
 
 function Footer() {
@@ -90,6 +94,7 @@ function Footer() {
                                 CB4 0WS
                             </li>
                             <li >
+                                &nbsp;
                             </li>
                             <li >
                                 Tel: <a href="tel:#tel">01223 37 57 72</a>
@@ -117,6 +122,7 @@ function Footer() {
                                 NR18 0WZ
                             </li>
                             <li>
+                                &nbsp;
                             </li>
                             <li>
                                 Tel: <a href="tel:01603704020">01603 70 40 20</a>
@@ -144,6 +150,7 @@ function Footer() {
                                 NR31 7RA
                             </li>
                             <li >
+                                &nbsp;
                             </li>
                             <li >
                                 Tel: <a href="tel:01493603204">01493 60 32 04</a>
@@ -153,16 +160,27 @@ function Footer() {
                 </div>
             </div>
             <div className="container__bottom-row">
-                <div className="DIV_76">
-                    © Copyright Netmatters 2022.<br className="BR_77" /> All rights reserved. <span className="SPAN_78">-</span>
-                    <ul className="UL_79">
-                        <li className="LI_80">
-                            <a href="https://www.netmatters.co.uk/sitemap.xml" className="A_81">Sitemap</a>
-                        </li>
-                    </ul>
+                <div className="container__bottom-row--horizontal-line">
+                    <hr />
                 </div>
-                <div className="DIV_82">
-                    <a href="https://en-gb.facebook.com/netmatters/" rel="noopener noreferrer" className="A_83"><span className="SPAN_84"></span></a> <a href="https://twitter.com/netmattersltd" rel="noopener noreferrer" className="A_85"><span className="SPAN_86"></span></a> <a href="https://www.instagram.com/netmattersltd/" rel="noopener noreferrer" className="A_87"><span className="SPAN_88"></span></a> <a href="https://www.linkedin.com/company/netmatters-ltd/" rel="noopener noreferrer" className="A_89"><span className="SPAN_90"></span></a>
+                <div className="container__bottom-row--content">
+                    <div className="container__bottom-row--content--copyright">
+                        © Copyright Netmatters 2022.<br className="BR_77" /> All rights reserved. <span className="SPAN_78">-</span>
+                        <ul className="UL_79">
+                            <li className="LI_80">
+                                <a href="#Sitemap" className="A_81">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="container__bottom-row--content--socials">
+                        <a href="https://en-gb.facebook.com/netmatters/" rel="noopener noreferrer" className="container__bottom-row--content--socials--item"><ImFacebook/></a>
+                        
+                        <a href="https://twitter.com/netmattersltd" rel="noopener noreferrer" className="container__bottom-row--content--socials--item"><BsTwitter/></a> 
+                        
+                        <a href="https://www.instagram.com/netmattersltd/" rel="noopener noreferrer" className="container__bottom-row--content--socials--item"><GrInstagram/></a> 
+                        
+                        <a href="https://www.linkedin.com/company/netmatters-ltd/" rel="noopener noreferrer" className="container__bottom-row--content--socials--item"><GrLinkedinOption/></a>
+                    </div>
                 </div>
             </div>
         </div>

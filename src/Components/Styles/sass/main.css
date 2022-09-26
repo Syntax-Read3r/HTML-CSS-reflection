@@ -222,4 +222,42 @@
   color: #deffff;
   text-decoration: none;
   padding: 20px;
+}
+
+.footer {
+  background-color: #333645;
+}
+
+.container {
+  margin-top: 30px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container__top-row {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.container__top-row--services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container__top-row--offices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.container__top-row--offices--location {
+  margin-bottom: 30px;
+}
+.container__top-row h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-bottom: 26px;
+}
+.container__bottom-row--content {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */
