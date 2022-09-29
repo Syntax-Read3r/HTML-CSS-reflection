@@ -191,6 +191,80 @@
   margin-bottom: 3.5;
 }
 
+.nav-container {
+  width: 100%;
+  height: 96px;
+  background-color: #333645;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+}
+.nav-container__list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.nav-container__list--software {
+  grid-column: 1/2;
+  display: inline-block;
+  position: relative;
+}
+.nav-container__list--software--item, .nav-container__list--developer-course--item, .nav-container__list--security--item, .nav-container__list--web--item, .nav-container__list--telecoms--item, .nav-container__list--digital--item, .nav-container__list--it--item {
+  position: relative;
+  display: block;
+  color: white;
+  padding: 19px 0 20px 0;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1;
+}
+.nav-container__list--software--item:hover, .nav-container__list--developer-course--item:hover, .nav-container__list--security--item:hover, .nav-container__list--web--item:hover, .nav-container__list--telecoms--item:hover, .nav-container__list--digital--item:hover, .nav-container__list--it--item:hover {
+  background-color: #67809f;
+}
+.nav-container__list--it {
+  grid-column: 2/3;
+  display: inline-block;
+}
+.nav-container__list--it--item:hover {
+  background-color: #b79e67;
+}
+.nav-container__list--digital {
+  grid-column: 3/4;
+  display: inline-block;
+}
+.nav-container__list--digital--item:hover {
+  background-color: #b76767;
+}
+.nav-container__list--telecoms {
+  grid-column: 4/5;
+  display: inline-block;
+}
+.nav-container__list--telecoms--item:hover {
+  background-color: #b767b7;
+}
+.nav-container__list--web {
+  grid-column: 5/6;
+  display: inline-block;
+}
+.nav-container__list--web--item:hover {
+  background-color: #67b7b7;
+}
+.nav-container__list--security {
+  grid-column: 6/7;
+  display: inline-block;
+}
+.nav-container__list--security--item:hover {
+  background-color: #67b767;
+}
+.nav-container__list--developer-course {
+  grid-column: 7/8;
+  display: inline-block;
+}
+.nav-container__list--developer-course--item:hover {
+  background-color: #b7b767;
+}
+
 .sideMenu {
   height: 100%;
   width: 320px;
@@ -235,6 +309,8 @@
   width: 90%;
   margin: 0 auto;
   padding: 0 15px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.375rem;
 }
 .container__top-row {
   display: grid;

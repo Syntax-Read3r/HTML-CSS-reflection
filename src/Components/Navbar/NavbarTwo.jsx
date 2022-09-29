@@ -11,15 +11,15 @@ import {IoMdSchool} from 'react-icons/io'
 function NavbarTwo() {
   return (
     
-    <div class="container">
-        <ul>
-            <li  class="container__software ">
-                <a href="software">
-                    <IoAppsSharp class="container__software--icon"/>
-                    <small>Bespoke</small>
-                    Software
+    <div className="nav-container">
+        <ul className="nav-container__list">
+            <li  className="nav-container__list--software ">
+                <a href="software" className='nav-container__list--software--item'>
+                    <IoAppsSharp className="nav-container__list--software--item--icon"/>
+                    <p className='nav-container__list--software--item--small'><small>Bespoke</small></p>
+                    <p className='nav-container__list--software--item--paragraph'>Software</p>
                 </a>
-                <ul class="container__software--menu">
+                <ul className="nav-container__list--software--menu">
                     <li>
                         <a href="#workflow">
                             Workflow
@@ -62,13 +62,13 @@ function NavbarTwo() {
                     </li>
                 </ul>
             </li>
-            <li class="container__it">
-                <a href="#it">
-                    <ImDisplay class="container__it--icon"/>
-                    <small>IT</small>
-                    Support
+            <li className="nav-container__it">
+                <a href="#it" className="nav-container__list--it--item">
+                    <ImDisplay className="nav-container__list--it--icon"/>
+                    <p><small className="nav-container__list--it--small">IT</small></p>
+                   <p className="nav-container__list--it--paragraph">Support</p>
                 </a>
-                <ul class="container__it--menu">
+                <ul className="nav-container__list--it--menu">
                     <li>
                         <a href="#Managed IT">
                             Managed IT
@@ -101,13 +101,13 @@ function NavbarTwo() {
                     </li>
                 </ul>
             </li>
-            <li class="container__digital">
-                <a href="#digital">
-                    <AiFillSignal class="container__digital--icon"/>
-                    <small>Digital</small>
-                    Marketing
+            <li className="nav-container__list--digital">
+                <a href="#digital"  className="nav-container__list--digital--item">
+                    <AiFillSignal className="nav-container__list--digital--item--icon"/>
+                    <p><small  className="nav-container__list--digital--item--small">Digital</small></p>
+                    <p  className="nav-container__list--digital--item--paragraph">Marketing</p>
                 </a>
-                <ul class="container__digital--menu">
+                <ul className="nav-container__digital--menu">
                     <li>
                         <a href="#Search">
                             Search (SEO)
@@ -140,13 +140,13 @@ function NavbarTwo() {
                     </li>
                 </ul>
             </li>
-            <li  class="container__telecoms">
-                <a href="#Telecoms">
-                    <MdPhoneInTalk class="container__telecoms--icon"/>
-                    <small>Telecoms</small>
-                    Services
+            <li  className="nav-container__list--telecoms">
+                <a href="#Telecoms"  className="nav-container__list--telecoms--item">
+                    <MdPhoneInTalk className="nav-container__list--telecoms--item--icon"/>
+                    <p><small  className="nav-container__list--telecoms--item--small">Telecoms</small></p>
+                    <p  className="nav-container__list--telecoms--item--paragraph">Services</p>
                 </a>
-                <ul class="container__telecoms--menu">
+                <ul className="nav-container__telecoms--menu">
                     <li>
                         <a href="#Business Mobile">
                             Business Mobile
@@ -179,13 +179,13 @@ function NavbarTwo() {
                     </li>
                 </ul>
             </li>
-            <li class="container__web">
-                <a href="#web">
-                    <GrCode class="container__web--icon"/>
-                    <small>Web</small>
-                    Design
+            <li className="nav-container__list--web">
+                <a href="#web" className='nav-container__list--web--item'>
+                    <GrCode className="nav-container__list--web--item--icon"/>
+                    <p><small className='nav-container__list--web--item--small'>Web</small></p>
+                    <p>Design</p>
                 </a>
-                <ul class="container__web--menu">
+                <ul className="nav-container__web--menu">
                     <li>
                         <a href="#Stylish Websites">
                             Stylish Websites
@@ -218,13 +218,13 @@ function NavbarTwo() {
                     </li>
                 </ul>
             </li>
-            <li class="container__security">
-                <a href="#Cyber">
-                    <MdSecurity class="container__security--icon"/>
-                    <small>Cyber</small>
-                    Security
+            <li className="nav-container__list--security">
+                <a href="#Cyber" className="nav-container__list--security--item">
+                    <MdSecurity className="nav-container__list--security--item--icon"/>
+                    <p><small className="nav-container__list--security--item--small">Cyber</small></p>
+                    <p className="nav-container__list--security--item--paragraph">Security</p>
                 </a>
-                <ul class="container__security--menu">
+                <ul className="nav-container__security--menu">
                     <li>
                         <a href="Assessment">
                             Assessment
@@ -257,13 +257,13 @@ function NavbarTwo() {
                     </li>
                 </ul>
             </li>
-            <li  class="container__developer-course">
-                <a href="#Developer">
-                    <IoMdSchool class="container__developer-course--icon" />
-                    <small>Developer</small>
-                    Course
+            <li  className="nav-container__list--developer-course">
+                <a href="#Developer" className="nav-container__list--developer-course--item">
+                    <IoMdSchool className="nav-container__list--developer-course--item--icon" />
+                    <p><small className="nav-container__list--developer-course--item--small">Developer</small></p>
+                    <p className="nav-container__list--developer-course--item--paragraphy">Course</p>
                 </a>
-                <ul class="container__developer--menu">
+                <ul className="nav-container__developer--menu">
                     <li>
                         <a href="#Train">
                             Train For A Career In Tech
