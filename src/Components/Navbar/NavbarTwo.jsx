@@ -16,47 +16,47 @@ function NavbarTwo() {
             <li  className="nav-container__list--software ">
                 <a href="software" className='nav-container__list--software--item'>
                     <IoAppsSharp className="nav-container__list--software--item--icon"/>
-                    <p className='nav-container__list--software--item--small'><small>Bespoke</small></p>
+                    <p className='nav-container__list--software--item--small'>Bespoke</p>
                     <p className='nav-container__list--software--item--paragraph'>Software</p>
                 </a>
                 <ul className="nav-container__list--software--menu">
-                    <li>
-                        <a href="#workflow">
+                    <li className="nav-container__list--softtware--menu--item">
+                        <a href="#workflow" className="nav-container__list--software--menu--item--link">
                             Workflow
                         </a>
                     </li>
-                    <li>
-                        <a href="Automation">
+                    <li className="nav-container__list--software--menu--item">
+                        <a href="Automation"  className="nav-container__list--software--menu--item--link">
                             Automation
                         </a>
                     </li>
-                    <li>
-                        <a href="#intergration">
+                    <li className="nav-container__list--software--menu--item">
+                        <a href="#intergration"  className="nav-container__list--software--menu--item--link">
                             Integration
                         </a>
                     </li>
-                    <li>
-                        <a href="#Apps">
+                    <li className="nav-container__list--software--menu--item">
+                        <a href="#Apps"  className="nav-container__list--software--menu--item--link">
                             Apps
                         </a>
                     </li>
-                    <li>
-                        <a href="#Database">
+                    <li className="nav-container__list--software--menu--item">
+                        <a href="#Database"  className="nav-container__list--software--menu--item--link">
                             Database
                         </a>
                     </li>
-                    <li>
-                        <a href="#Sharepoint">
+                    <li className="nav-container__list--software--menu--item">
+                        <a href="#Sharepoint"  className="nav-container__list--software--menu--item--link">
                             SharePoint
                         </a>
                     </li>
-                    <li>
-                        <a href="#Management">
+                    <li className="nav-container__list--software--menu--item">
+                        <a href="#Management"  className="nav-container__list--software--menu--item--link">
                             Management
                         </a>
                     </li>
-                    <li>
-                        <a href="#Navision">
+                    <li className="nav-container__list--software--menu--item">
+                        <a href="#Navision"  className="nav-container__list--software--menu--item--link">
                             Navision
                         </a>
                     </li>

@@ -28,15 +28,67 @@
                 color: white;
                 padding: 19px 0 20px 0;
                 text-transform: uppercase;
+                text-decoration: none;
                 font-size: 1.125rem;
                 line-height: 1;
+
+
+                &--icon {
+                    color: #67809f;
+                    margin-bottom: 5px;
+                }
 
                 &:hover {
                     background-color: #67809f;
                     }
+
+                    &--small {
+                        font-size: small;
+                    }
+                }
+
+                &:hover .nav-container__list--software--item--icon {
+                    color: white;
+                    }
+
+                &:hover .nav-container__list--software--menu {
+                    display: block;
+                    }
+                
+
+              
+
+                &--menu {
+                    position: absolute;
+                    width: 100%;
+                    background-color: #50637a;
+                    line-height: 1.31rem;
+                    padding: 1rem 0 1rem 0;
+                    z-index: 1;
+                    border-radius: 0 0 5px 5px;
+                    display: none;
+
+                    &--item {
+                        color: white;
+                        margin: 1.2rem 0 1.2rem 0;
+                        line-height: 1;
+                        display: block;
+
+                        &--link {
+                            color: white;
+                            text-decoration: none;
+                            line-height: 1;
+                            
+                            &:hover {
+                                color: white;
+                                text-decoration: underline;
+                                }
+                            
+                        
+                        }
+                    }
                 }
             }
-            
         
 
         // Second Column
