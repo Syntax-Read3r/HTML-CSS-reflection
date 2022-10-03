@@ -1,8 +1,11 @@
+import './Components/Styles/css/reset.css'
+
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import NavbarTwo from './Components/Navbar/NavbarTwo';
+import Banner from './Components/Banner/Banner'
 // import SideMenu from './Components/SideMenu/SideMenu';
-import './Components/Styles/css/reset.css'
+
 
 function App() {
   return (
@@ -10,6 +13,7 @@ function App() {
       <Navbar />
       <NavbarTwo />
       {/* <SideMenu /> */}
+      <Banner />
       <Footer />
     </div>
   );

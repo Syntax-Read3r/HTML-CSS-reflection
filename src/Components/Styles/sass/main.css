@@ -195,7 +195,6 @@
   width: 100%;
   height: 96px;
   background-color: #333645;
-  position: absolute;
   font-family: "Poppins", sans-serif;
 }
 .nav-container__list {
@@ -338,7 +337,7 @@
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: #333645;
@@ -457,4 +456,17 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.banner-container__row--banner--image img {
+  width: 100%;
+  height: auto;
+}
+.banner-container__row--banner--text {
+  position: absolute;
 }/*# sourceMappingURL=main.css.map */
