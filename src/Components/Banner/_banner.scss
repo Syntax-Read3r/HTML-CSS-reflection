@@ -1,24 +1,60 @@
+
+
 .banner-container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	font-family: $default-font;
+	color: white;
 
-    &__row {
 
-        &--banner {
 
-            &--image {
+	&__row {
+		width: 100%;
+		height: 100%;
+	
 
-                & img {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-        
-            &--text {
-                position: absolute;
-            }
-        }
-    }
+		&--banner {
+			&--image {
+                background: rgb(2, 0, 36);
+                background: linear-gradient(
+                    90deg,
+                    rgba(2, 0, 36, 1) 0%,
+                    rgba(0, 0, 0, 1) 0%,
+                    rgba(255, 255, 255, 1) 69%
+                );
+                z-index: 100;
+				& img {
+					width: 100%;
+					height: auto;
+                
+				}
+			}
 
+			&--text {
+				position: absolute;
+				width: 80%;
+				margin-left: 7%;
+				top: 27%;
+				z-index: 1;
+
+				&--h2 {
+					line-height: 80px;
+					text-align: start;
+					margin-bottom: 1.125rem;
+
+					& h2 {
+						font-size: 64px;
+					}
+				}
+
+				& p {
+					font-size: 26px;
+					line-height: 40px;
+					text-align: start;
+					letter-spacing: 0.4px;
+				}
+			}
+		}
+	}
 }
