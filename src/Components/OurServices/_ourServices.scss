@@ -1,0 +1,218 @@
+.c_one {
+	margin: 0 15px 0 0;
+}
+.c_two {
+	margin: 0 15px 0 15px;
+}
+.c_three {
+	margin: 0 0 0 15px;
+}
+
+a:link {
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+.our-services__container {
+	display: block;
+	width: 86%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: $default-font;
+
+	&--header {
+		font-size: 43.2px;
+		line-height: 47.52px;
+		text-align: start;
+		letter-spacing: 0.4px;
+		color: #333645;
+		margin: 54px 0 40px 0;
+	}
+
+	&--row--top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+
+		&--card--one {
+			width: 33.33333%;
+			display: block;
+			padding: 30px;
+			border: 1px solid #a8a6a6;
+			border-radius: 15px;
+			-webkit-border-radius: 15px;
+			-moz-border-radius: 15px;
+			-ms-border-radius: 15px;
+			-o-border-radius: 15px;
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+			-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+			-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+			-ms-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+			-o-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+			transition: all 0.5s ease 0s;
+
+
+
+
+			&--icon-container {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				-ms-border-radius: 50%;
+				-o-border-radius: 50%;
+				width: 65px;
+				height: 65px;
+				margin: 0 auto 17px;
+				background-color: $website--colorOne;
+
+				&--icon {
+					color: white;
+					font-size: 2rem;
+				}
+			}
+
+			&--text-container  {
+                &--title {
+                    font-size: 1.3rem;
+                    padding-bottom: 10px;
+                    margin: 0 0 11px;
+                    font-weight: 400;
+                    letter-spacing: .4px;
+					color: #333645;
+                    
+                }
+
+                &--paragraph {
+                    font-size: .8125rem;
+                    line-height: 1.375rem;
+                    margin-bottom: 13px;
+                    font-weight: 400;
+                    color: #333645;
+                    letter-spacing: .4px;
+                }
+			}
+
+            &--button-container {
+                display: flex;
+                justify-content: center;
+				position: inherit;
+				margin-top: 10px;
+			}
+
+			&:hover {
+				background-color: $website--colorOne;
+				color: white;
+				transition: all 0.5s ease;
+				-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				-ms-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				transform: translateY(-10px);
+				-webkit-transform: translateY(-10px);
+				-moz-transform: translateY(-10px);
+				-ms-transform: translateY(-10px);
+				-o-transform: translateY(-10px);
+}
+
+			&:hover .our-services__container--row--top--card--one--icon-container {
+				background-color: white;
+			}
+
+			&:hover .our-services__container--row--top--card--one--icon-container--icon {
+				color: $website--colorOne;
+			}
+
+			&:hover .our-services__container--row--top--card--one--text-container--title {
+				color: white;
+			}
+
+			&:hover .our-services__container--row--top--card--one--text-container--paragraph {
+				color: white;
+			}
+
+			&:hover .our-services__container--row--top--card--one--button-container Button{
+				color: $website--colorOne;
+				background-color: white;
+			}
+		}
+
+		&--card--two {
+			@extend .our-services__container--row--top--card--one;
+
+			&--icon-container {
+				@extend .our-services__container--row--top--card--one--icon-container;
+				background-color: $website--colorTwo;
+
+				&--icon {
+					@extend .our-services__container--row--top--card--one--icon-container--icon;
+				}
+			}
+
+			&--text-container  {
+				& h2 {
+					@extend .our-services__container--row--top--card--one--text-container--title;
+				}
+
+				& p {
+					@extend .our-services__container--row--top--card--one--text-container--paragraph;
+				}
+			}
+
+			&--button-container {
+				@extend .our-services__container--row--top--card--one--button-container;
+			}
+
+			&:hover {
+				background-color: $website--colorTwo;
+				color: white;
+			}
+
+			&:hover .our-services__container--row--top--card--one--icon-container--icon {
+				color: $website--colorTwo;
+			}
+			
+		}
+
+		// card three with a different background color of #2dc86f;
+		&--card--three {
+			@extend .our-services__container--row--top--card--one;
+
+			&--icon-container {
+				@extend .our-services__container--row--top--card--one--icon-container;
+				background-color: #2dc86f;
+
+				&--icon {
+					@extend .our-services__container--row--top--card--one--icon-container--icon;
+				}
+			}
+
+			&--text-container  {
+				& h2 {
+					@extend .our-services__container--row--top--card--one--text-container--title;
+				}
+
+				& p {
+					@extend .our-services__container--row--top--card--one--text-container--paragraph;
+				}
+			}
+
+			&--button-container {
+				@extend .our-services__container--row--top--card--one--button-container;
+			}
+
+			&:hover {
+				background-color: $website--colorThree;
+				color: white;
+			}
+
+			&:hover .our-services__container--row--top--card--one--icon-container--icon {
+				color: $website--colorThree;
+			}
+		}
+	}
+}
