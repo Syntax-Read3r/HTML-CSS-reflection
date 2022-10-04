@@ -4,7 +4,7 @@ import logo from "../../Assets/Images/logo2.png";
 import Button from "../Button/Button";
 import { MdMouse } from "react-icons/md";
 import { GiPaperPlane } from "react-icons/gi";
-import { GiMagnifyingGlass } from "react-icons/gi";
+import searchIcon from "../../Assets/Images/searchIcon.png";
 
 export default function Navbar() {
 	const checkMenuButton = (e) => {
@@ -84,7 +84,7 @@ export default function Navbar() {
 							className="btn--search--nav"
 							type="submit"
 						>
-							<GiMagnifyingGlass fontSize="23.008px" color="#fff" />
+							<img src={searchIcon} fontSize="23.008px" color="#fff" />
 						</button>
 					</form>
 				</div>

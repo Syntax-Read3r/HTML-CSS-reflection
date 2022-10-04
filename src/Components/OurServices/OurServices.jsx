@@ -54,7 +54,7 @@ function OurServices() {
 
 						<p>
 							Remotely managed IT services that is catered to your business
-							needs, adds value &#38; reduces costs.
+							needs, adds value &#38; reduces <br /> costs.
 						</p>
 					</div>
 					<div className="our-services__container--row--top--card--two--button-container">
@@ -95,21 +95,23 @@ function OurServices() {
 				{/* Start of Card One */}
 				<a
 					href="Bespoke Software"
-					className="our-services__container--row--bottom--cardOne"
+					className="our-services__container--row--bottom--card--one"
 				>
-					<div className="our-services__container--row--bottom--card--icon-container">
-						<MdPhoneInTalk className="our-services__container--row--bottom--card--icon-container--icon" />
+					<div className="our-services__container--row--bottom--card--one--icon-container">
+						<MdPhoneInTalk className="our-services__container--row--bottom--card--one--icon-container--icon" />
 					</div>
 
-					<div className="our-services__container--row--bottom--card--text-container">
-						<h2>Telecoms Services</h2>
+					<div className="our-services__container--row--bottom--card--one--text-container">
+						<h2
+						className="our-services__container--row--bottom--card--one--text-container--title">Telecoms Services</h2>
 
-						<p>
+						<p
+						className="our-services__container--row--bottom--card--one--text-container--paragraph">
 							Stay connected with bespoke telecoms solutions when you need it
 							most.
 						</p>
 					</div>
-					<div className="our-services__container--row--bottom--card--button-container">
+					<div className="our-services__container--row--bottom--card--one--button-container">
 						<Button>Read More</Button>
 					</div>
 				</a>
@@ -118,21 +120,23 @@ function OurServices() {
 				{/* Start of Card Two */}
 				<a
 					href="Bespoke Software"
-					className="our-services__container--row--bottom--card"
+					className="our-services__container--row--bottom--card--two"
 				>
-					<div className="our-services__container--row--bottom--card--icon-container">
-						<GrCode className="our-services__container--row--bottom--card--icon-container--icon" />
+					<div className="our-services__container--row--bottom--card--two--icon-container">
+						<GrCode className="our-services__container--row--bottom--card--two--icon-container--icon" />
 					</div>
 
-					<div className="our-services__container--row--bottom--card--text-container">
-						<h2>Web Design</h2>
+					<div className="our-services__container--row--bottom--card--two--text-container">
+						<h2
+						className="our-services__container--row--bottom--card--two--text-container--title">Web Design</h2>
 
-						<p>
+						<p
+						className="our-services__container--row--bottom--card--two--text-container--paragraph">
 							User-centric design for businesses looking to make a lasting
 							impression.
 						</p>
 					</div>
-					<div className="our-services__container--row--bottom--card--button-container">
+					<div className="our-services__container--row--bottom--card--two--button-container">
 						<Button>Read More</Button>
 					</div>
 				</a>
@@ -141,21 +145,23 @@ function OurServices() {
 				{/* Start of Card Three */}
 				<a
 					href="Bespoke Software"
-					className="our-services__container--row--bottom--card"
+					className="our-services__container--row--bottom--card--three"
 				>
-					<div className="our-services__container--row--bottom--card--icon-container">
-						<MdSecurity className="our-services__container--row--bottom--card--icon-container--icon" />
+					<div className="our-services__container--row--bottom--card--three--icon-container">
+						<MdSecurity className="our-services__container--row--bottom--card--three--icon-container--icon" />
 					</div>
 
-					<div className="our-services__container--row--bottom--card--text-container">
-						<h2>Cyber Security</h2>
+					<div className="our-services__container--row--bottom--card--three--text-container">
+						<h2
+						className="our-services__container--row--bottom--card--three--text-container--title">Cyber Security</h2>
 
-						<p>
-							Ensuring your online business stas secure 27/7 365 days of the
+						<p
+						className="our-services__container--row--bottom--card--three--text-container--paragraph">
+							Ensuring your online business stas secure 27/7 365 days of the <br />
 							year.
 						</p>
 					</div>
-					<div className="our-services__container--row--bottom--card--button-container">
+					<div className="our-services__container--row--bottom--card--three--button-container">
 						<Button>Read More</Button>
 					</div>
 				</a>
@@ -164,21 +170,23 @@ function OurServices() {
 				{/* Start of Card Four */}
 				<a
 					href="Bespoke Software"
-					className="our-services__container--row--bottom--card"
+					className="our-services__container--row--bottom--card--four"
 				>
-					<div className="our-services__container--row--bottom--card--icon-container">
-						<IoMdSchool className="our-services__container--row--bottom--card--icon-container--icon" />
+					<div className="our-services__container--row--bottom--card--four--icon-container">
+						<IoMdSchool className="our-services__container--row--bottom--card--four--icon-container--icon" />
 					</div>
 
-					<div className="our-services__container--row--bottom--card--text-container">
-						<h2>Developer Training</h2>
+					<div className="our-services__container--row--bottom--card--four--text-container">
+						<h2
+						className="our-services__container--row--bottom--card--four--text-container--title">Developer Training</h2>
 
-						<p>
+						<p
+						className="our-services__container--row--bottom--card--four--text-container--paragraph">
 							Have you considered a career in software development but you
-							aren't sure where to start? We can help.
+							aren't sure where to start?
 						</p>
 					</div>
-					<div className="our-services__container--row--bottom--card--button-container">
+					<div className="our-services__container--row--bottom--card--four--button-container">
 						<Button>Read More</Button>
 					</div>
 				</a>

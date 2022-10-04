@@ -1,13 +1,3 @@
-.c_one {
-	margin: 0 15px 0 0;
-}
-.c_two {
-	margin: 0 15px 0 15px;
-}
-.c_three {
-	margin: 0 0 0 15px;
-}
-
 a:link {
 	text-decoration: none !important;
 	cursor: pointer;
@@ -19,6 +9,7 @@ a:link {
 	margin: 0 auto;
 	text-align: center;
 	font-family: $default-font;
+	position: relative;
 
 	&--header {
 		font-size: 43.2px;
@@ -50,10 +41,8 @@ a:link {
 			-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
 			-ms-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
 			-o-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+			margin: 0 15px 0 0;
 			transition: all 0.5s ease 0s;
-
-
-
 
 			&--icon-container {
 				display: flex;
@@ -76,32 +65,33 @@ a:link {
 				}
 			}
 
-			&--text-container  {
-                &--title {
-                    font-size: 1.3rem;
-                    padding-bottom: 10px;
-                    margin: 0 0 11px;
-                    font-weight: 400;
-                    letter-spacing: .4px;
+			&--text-container {
+				&--title {
+					font-size: 1.3rem;
+					padding-bottom: 10px;
+					margin: 0 0 11px;
+					font-weight: 400;
+					letter-spacing: 0.4px;
 					color: #333645;
-                    
-                }
+				}
 
-                &--paragraph {
-                    font-size: .8125rem;
-                    line-height: 1.375rem;
-                    margin-bottom: 13px;
-                    font-weight: 400;
-                    color: #333645;
-                    letter-spacing: .4px;
-                }
+				&--paragraph {
+					font-size: 0.8125rem;
+					line-height: 1.375rem;
+					margin-bottom: 13px;
+					font-weight: 400;
+					color: #333645;
+					letter-spacing: 0.4px;
+				}
 			}
 
-            &--button-container {
-                display: flex;
-                justify-content: center;
+			&--button-container {
+				display: flex;
+				justify-content: center;
+				width: 100%;
 				position: inherit;
 				margin-top: 10px;
+				margin-left: 10px;
 			}
 
 			&:hover {
@@ -117,25 +107,30 @@ a:link {
 				-moz-transform: translateY(-10px);
 				-ms-transform: translateY(-10px);
 				-o-transform: translateY(-10px);
-}
+			}
 
 			&:hover .our-services__container--row--top--card--one--icon-container {
 				background-color: white;
 			}
 
-			&:hover .our-services__container--row--top--card--one--icon-container--icon {
+			&:hover
+				.our-services__container--row--top--card--one--icon-container--icon {
 				color: $website--colorOne;
 			}
 
-			&:hover .our-services__container--row--top--card--one--text-container--title {
+			&:hover
+				.our-services__container--row--top--card--one--text-container--title {
 				color: white;
 			}
 
-			&:hover .our-services__container--row--top--card--one--text-container--paragraph {
+			&:hover
+				.our-services__container--row--top--card--one--text-container--paragraph {
 				color: white;
 			}
 
-			&:hover .our-services__container--row--top--card--one--button-container Button{
+			&:hover
+				.our-services__container--row--top--card--one--button-container
+				Button {
 				color: $website--colorOne;
 				background-color: white;
 			}
@@ -143,6 +138,7 @@ a:link {
 
 		&--card--two {
 			@extend .our-services__container--row--top--card--one;
+			margin: 0 15px 0 15px;
 
 			&--icon-container {
 				@extend .our-services__container--row--top--card--one--icon-container;
@@ -153,7 +149,7 @@ a:link {
 				}
 			}
 
-			&--text-container  {
+			&--text-container {
 				& h2 {
 					@extend .our-services__container--row--top--card--one--text-container--title;
 				}
@@ -172,15 +168,16 @@ a:link {
 				color: white;
 			}
 
-			&:hover .our-services__container--row--top--card--one--icon-container--icon {
+			&:hover
+				.our-services__container--row--top--card--one--icon-container--icon {
 				color: $website--colorTwo;
 			}
-			
 		}
 
 		// card three with a different background color of #2dc86f;
 		&--card--three {
 			@extend .our-services__container--row--top--card--one;
+			margin: 0 0 0 15px;
 
 			&--icon-container {
 				@extend .our-services__container--row--top--card--one--icon-container;
@@ -191,7 +188,7 @@ a:link {
 				}
 			}
 
-			&--text-container  {
+			&--text-container {
 				& h2 {
 					@extend .our-services__container--row--top--card--one--text-container--title;
 				}
@@ -210,8 +207,165 @@ a:link {
 				color: white;
 			}
 
-			&:hover .our-services__container--row--top--card--one--icon-container--icon {
+			&:hover
+				.our-services__container--row--top--card--one--icon-container--icon {
 				color: $website--colorThree;
+			}
+		}
+	}
+
+	&--row--bottom {
+		@extend .our-services__container--row--top;
+
+		&--card--one {
+			@extend .our-services__container--row--top--card--one;
+			margin: 0 15px 0 0;
+
+			&--icon-container {
+				@extend .our-services__container--row--top--card--one--icon-container;
+				background-color: $website--colorFour;
+
+				&--icon {
+					@extend .our-services__container--row--top--card--one--icon-container--icon;
+				}
+			}
+
+			&--text-container {
+				&--title {
+					@extend .our-services__container--row--top--card--one--text-container--title;
+				}
+
+				&--paragraph {
+					@extend .our-services__container--row--top--card--one--text-container--paragraph;
+				}
+			}
+
+			&--button-container {
+				@extend .our-services__container--row--top--card--one--button-container;
+			}
+
+			&:hover {
+				background-color: $website--colorFour;
+				color: white;
+			}
+
+			&:hover
+				.our-services__container--row--top--card--one--icon-container--icon {
+				color: $website--colorFour;
+			}
+		}
+
+		&--card--two {
+			@extend .our-services__container--row--top--card--one;
+			margin: 0 15px 0 15px;
+
+			&--icon-container {
+				@extend .our-services__container--row--top--card--one--icon-container;
+				background-color: $website--colorFive;
+
+				&--icon {
+					@extend .our-services__container--row--top--card--one--icon-container--icon;
+				}
+			}
+
+			&--text-container {
+				&--title {
+					@extend .our-services__container--row--top--card--one--text-container--title;
+				}
+
+				&--paragraph {
+					@extend .our-services__container--row--top--card--one--text-container--paragraph;
+				}
+			}
+
+			&--button-container {
+				@extend .our-services__container--row--top--card--one--button-container;
+			}
+
+			&:hover {
+				background-color: $website--colorFive;
+				color: white;
+			}
+
+			&:hover
+				.our-services__container--row--top--card--one--icon-container--icon {
+				color: $website--colorFive;
+			}
+		}
+
+		&--card--three {
+			@extend .our-services__container--row--top--card--one;
+			margin: 0 15px 0 15px;
+
+			&--icon-container {
+				@extend .our-services__container--row--top--card--one--icon-container;
+				background-color: $website--colorSix;
+
+				&--icon {
+					@extend .our-services__container--row--top--card--one--icon-container--icon;
+				}
+			}
+
+			&--text-container {
+				&--title {
+					@extend .our-services__container--row--top--card--one--text-container--title;
+				}
+
+				&--paragraph {
+					@extend .our-services__container--row--top--card--one--text-container--paragraph;
+				}
+			}
+
+			&--button-container {
+				@extend .our-services__container--row--top--card--one--button-container;
+			}
+
+			&:hover {
+				background-color: $website--colorSix;
+				color: white;
+			}
+
+			&:hover
+				.our-services__container--row--top--card--one--icon-container--icon {
+				color: $website--colorSix;
+			}
+		}
+
+		&--card--four {
+			@extend .our-services__container--row--top--card--one;
+			margin: 0 0 0 15px;
+
+			&--icon-container {
+				@extend .our-services__container--row--top--card--one--icon-container;
+				background-color: $website--colorSeven;
+
+				&--icon {
+					@extend .our-services__container--row--top--card--one--icon-container--icon;
+				}
+			}
+
+			&--text-container {
+				&--title {
+					@extend .our-services__container--row--top--card--one--text-container--title;
+				}
+
+				&--paragraph {
+					@extend .our-services__container--row--top--card--one--text-container--paragraph;
+				}
+			}
+
+			&--button-container {
+				@extend .our-services__container--row--top--card--one--button-container;
+			}
+
+			&:hover {
+				background-color: $website--colorSeven;
+				color: white;
+			}
+
+			&:hover
+				.our-services__container--row--top--card--one--icon-container--icon {
+				color: $website--colorSeven;
 			}
 		}
 	}
