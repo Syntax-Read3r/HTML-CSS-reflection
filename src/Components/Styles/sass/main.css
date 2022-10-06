@@ -731,4 +731,63 @@ a:link {
   top: 0px;
   left: 20px;
   height: 70px;
+}
+
+.reviews__section {
+  display: flex;
+  background-color: #333645;
+  padding: 50px 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  line-height: 1.1;
+}
+.reviews__section--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 86%;
+  margin: 0 auto;
+}
+.reviews__section--container--columnOne {
+  padding: 0 15px;
+}
+.reviews__section--container--columnOne--title, .reviews__section--container--columnTwo--title {
+  margin: -6px 0 40px 0;
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 40px;
+  letter-spacing: 0.4px;
+}
+.reviews__section--container--columnOne--paragraph, .reviews__section--container--columnTwo--author, .reviews__section--container--columnTwo--paragraph {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+}
+.reviews__section--container--columnTwo {
+  padding: 0 15px;
+}
+.reviews__section--container--columnTwo--stars {
+  color: orange;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+.reviews__section--container--columnTwo--paragraph {
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.875rem;
+}
+.reviews__section--container--columnTwo--author {
+  color: #666;
+  font-size: 1.1rem;
+}
+.reviews__section--container--columnTwo--btn-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 55px 8px 0 0;
+}
+.reviews__section--container--columnTwo--btn-container--btnOne {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
