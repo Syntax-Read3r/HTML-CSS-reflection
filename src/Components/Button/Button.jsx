@@ -5,9 +5,9 @@ const STYLES = [
     "btn--primary--nav",
     "btn--secondary--nav",
     "btn--search--nav",
-    "btn--danger--solid",
-    "btn--danger--outline",
-    "btn--success--solid",
+    "btn--reviews--readMore",
+    "btn--google--reviews",
+    "btn--trustpilot--reviews",
     "btn--success--outline",
 
 ]

@@ -84,7 +84,8 @@ export default function Navbar() {
 							className="btn--search--nav"
 							type="submit"
 						>
-							<img src={searchIcon} fontSize="23.008px" color="#fff" />
+							<img src={searchIcon} fontSize="23.008px" color="#fff" 
+							alt='magnifying glass'/>
 						</button>
 					</form>
 				</div>

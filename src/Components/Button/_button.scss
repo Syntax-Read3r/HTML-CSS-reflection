@@ -43,6 +43,39 @@
         };
     }
 
+    
+    &--reviews--readMore {
+        background-color: #272936;
+        width: 205px;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: #0a0a0e;
+        };
+    }
+
+    &--google--reviews {
+       @extend .btn--reviews--readMore;
+       width: 265px;
+         background-color: #4387f6;
+         margin-right: 10px;
+
+        &:hover {
+            background-color: $navbar--button--one-hover;
+        };
+    }
+
+    &--trustpilot--reviews {
+        @extend .btn--reviews--readMore;
+        width: 295px;
+        background-color: #00b67b;
+
+        &:hover {
+            background-color: #009b69;
+        };
+    }
+
 }
 
 

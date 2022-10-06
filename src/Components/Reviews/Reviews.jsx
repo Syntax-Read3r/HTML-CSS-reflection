@@ -18,13 +18,26 @@ function Reviews() {
 						Cambridge, Wymondham, and Great Yarmouth.
 					</p>
 
-					<p className="reviews__section--container--columnOne--paragraph">We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
+					<p className="reviews__section--container--columnOne--paragraph">
+						We aren't tied into contracts with third-party providers, so you
+						know that our recommendations for your business are based purely
+						with one benefit in mind: to help improve your business with the
+						most appropriate solutions.
+					</p>
 
-					<p className="reviews__section--container--columnOne--paragraph">We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+					<p className="reviews__section--container--columnOne--paragraph">
+						We pride ourselves on being an ethical business and have a unique
+						business offering and cost model that ensures you get the most from
+						our relationship in an upfront manner.
+					</p>
 
 					{/* <p className="reviews__section--container--columnOne--paragraph"></p> */}
 
-					<Button className="reviews__section--container--columnOne--btn">
+					<Button
+						className="btn--reviews--readMore"
+						type={"button"}
+						buttonStyle={"btn--reviews--readMore"}
+					>
 						Read More{" "}
 						<IoMdArrowRoundForward className="reviews__section--container--columnOne--btn--icon" />
 					</Button>
@@ -60,13 +73,14 @@ function Reviews() {
 
 					<div className="reviews__section--container--columnTwo--btn-container">
 						{" "}
-						<Button className="reviews__section--container--columnTwo--btn-container--btnOne">
+						<Button className="btn--google--reviews"type={"button"}
+						buttonStyle={"btn--google--reviews"}>
 							Google Reviews{" "}
 							<IoMdArrowRoundForward className="reviews__section--container--columnTwo--btn--container--btnOne--icon" />
 						</Button>
-						<Button className="reviews__section--container--columnTwo--btn-container--btnTwo">
-							Trustpilot Reviews{" "}
-							<IoMdArrowRoundForward className="reviews__section--container--columnTwo--btn--container--btnTwo--icon" />
+						<Button className="btn--rustpilot--reviews"type={"button"}
+						buttonStyle={"btn--trustpilot--reviews"}>
+							Trustpilot Reviews<IoMdArrowRoundForward className="reviews__section--container--columnTwo--btn--container--btnTwo--icon" />
 						</Button>
 					</div>
 				</div>
