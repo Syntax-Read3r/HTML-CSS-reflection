@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 .navbar__top--menu.open .navbar__top--menu--burger {
   transform: translateX(-30px);
   -webkit-transform: translateX(-30px);
@@ -817,4 +817,33 @@ a:link {
   padding: 10px 20px;
   font-size: 20px;
   text-transform: uppercase;
+}
+
+.latestNews__container {
+  display: block;
+  margin: 0 auto;
+  width: 86%;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.1rem;
+  letter-spacing: 0.4px;
+}
+.latestNews__container--header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 0 0;
+}
+.latestNews__container--header h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin: 0 0 28px;
+  color: #333645;
+}
+.latestNews__container--header h3 {
+  margin-bottom: 15px;
+  font-size: 1.625rem;
+  font-weight: 500;
+}
+.latestNews__container--header h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

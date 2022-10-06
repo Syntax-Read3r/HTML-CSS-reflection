@@ -7,6 +7,7 @@ import Banner from './Components/Banner/Banner'
 import OurServices from './Components/OurServices/OurServices';
 import Awards from './Components/Awards/Awards';
 import Reviews from './Components/Reviews/Reviews';
+import LatestNews from './Components/LatestNews/LatestNews';
 // import SideMenu from './Components/SideMenu/SideMenu';
 
 
@@ -20,6 +21,7 @@ function App() {
       <OurServices />
       <Awards />
       <Reviews />
+      <LatestNews />
       <Footer />
     </div>
   );
