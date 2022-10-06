@@ -1,177 +1,196 @@
+.nav-container {
+	width: 100%;
+	height: 96px;
+	background-color: $bottom-navbar--bg;
+	font-family: $default-font;
 
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		width: 85%;
+		margin: 0 auto;
+		text-align: center;
 
-.nav-container  {
+		// First Column
+		&--software {
+			grid-column: 1 / 2;
+			display: inline-block;
+			position: relative;
 
-    width: 100%;
-    height: 96px;
-    background-color: $bottom-navbar--bg;
-    font-family: $default-font;
+			&--item {
+				position: relative;
+				display: block;
+				color: white;
+				padding: 19px 0 20px 0;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 1.125rem;
+				line-height: 1;
 
-    &__list {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        width: 85%;
-        margin: 0 auto;
-        text-align: center;
+				&--icon {
+					color: $website--colorOne;
+					margin-bottom: 5px;
+				}
 
+				&:hover {
+					background-color: $website--colorOne;
+				}
 
-         // First Column
-        &--software {
-            grid-column: 1 / 2;
-            display: inline-block;
-            position: relative;
+				&--small {
+					font-size: small;
+				}
+			}
 
-            &--item {
-                position: relative;
-                display: block;
-                color: white;
-                padding: 19px 0 20px 0;
-                text-transform: uppercase;
-                text-decoration: none;
-                font-size: 1.125rem;
-                line-height: 1;
+			&:hover .nav-container__list--software--item--icon {
+				color: white;
+			}
 
+			&:hover .nav-container__list--software--menu {
+				display: block;
+			}
 
-                &--icon {
-                    color: #67809f;
-                    margin-bottom: 5px;
-                }
+			&--menu {
+				position: absolute;
+				width: 100%;
+				background-color: $website--colorOne-b;
+				line-height: 1.31rem;
+				padding: 1rem 0 1rem 0;
+				z-index: 1000;
+				border-radius: 0 0 5px 5px;
+				display: none;
 
-                &:hover {
-                    background-color: #67809f;
-                    }
+				&--item {
+					color: white;
+					margin: 1.2rem 0 1.2rem 0;
+					line-height: 1;
+					display: block;
 
-                    &--small {
-                        font-size: small;
-                    }
-                }
+					&--link {
+						color: white;
+						text-decoration: none;
+						line-height: 1;
 
-                &:hover .nav-container__list--software--item--icon {
-                    color: white;
-                    }
+						&:hover {
+							color: white;
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
 
-                &:hover .nav-container__list--software--menu {
-                    display: block;
-                    }
-                
+		// Second Column
 
-              
+		&--it {
+			grid-column: 2 / 3;
+			display: inline-block;
+			@extend .nav-container__list--software;
 
-                &--menu {
-                    position: absolute;
-                    width: 100%;
-                    background-color: #50637a;
-                    line-height: 1.31rem;
-                    padding: 1rem 0 1rem 0;
-                    z-index: 1;
-                    border-radius: 0 0 5px 5px;
-                    display: none;
+			&--item {
+				@extend .nav-container__list--software--item;
 
-                    &--item {
-                        color: white;
-                        margin: 1.2rem 0 1.2rem 0;
-                        line-height: 1;
-                        display: block;
+				&--icon {
+					@extend .nav-container__list--software--item--icon;
+					color: $website--colorTwo;
+				}
+				&:hover {
+					background-color: $website--colorTwo;
+				}
+				&--small {
+					@extend .nav-container__list--software--item--small;
+				}
+			}
 
-                        &--link {
+			&:hover .nav-container__list--it--menu {
+				display: block;
+			}
+
+			&--menu {
+				@extend .nav-container__list--software--menu;
+				background-color: $website--colorTwo-b;
+				display: block;
+
+				&--item {
+					@extend .nav-container__list--software--menu--item;
+					&--link {
+						@extend .nav-container__list--software--menu--item--link;
+
+                        &:hover {
                             color: white;
-                            text-decoration: none;
-                            line-height: 1;
-                            
-                            &:hover {
-                                color: white;
-                                text-decoration: underline;
-                                }
-                            
-                        
+                            text-decoration: underline;
                         }
-                    }
-                }
-            }
-        
+					}
+				}
+			}
+		}
 
-        // Second Column
-        
-        &--it {
-            grid-column: 2 / 3;
-            display: inline-block;
+		// Third Column
 
-            &--item {
-                @extend .nav-container__list--software--item;
-                &:hover {
-                    background-color: #b79e67;
-                    }
-                }
-            }
-        
-        // Third Column
-        
-        &--digital {
-            grid-column: 3 / 4;
-            display: inline-block;
+		&--digital {
+			grid-column: 3 / 4;
+			display: inline-block;
 
-            &--item {
-                @extend .nav-container__list--software--item;
-                &:hover {
-                    background-color: #b76767;
-                    }
-                }
-            }
-        // Fourth Column
-        
-        &--telecoms {
-            grid-column: 4 / 5;
-            display: inline-block;
+			&--item {
+				@extend .nav-container__list--software--item;
+				&:hover {
+					background-color: #b76767;
+				}
+			}
+		}
+		// Fourth Column
 
-            &--item {
-                @extend .nav-container__list--software--item;
-                &:hover {
-                    background-color: #b767b7;
-                    }
-                }
-            }
-        
-        // Fifth Column
-        
-        &--web {
-            grid-column: 5 / 6;
-            display: inline-block;
+		&--telecoms {
+			grid-column: 4 / 5;
+			display: inline-block;
 
-            &--item {
-                @extend .nav-container__list--software--item;
-                &:hover {
-                    background-color: #67b7b7;
-                    }
-                }
-            }
-        
-        // Sixth Column
-        
-        &--security {
-            grid-column: 6 / 7;
-            display: inline-block;
+			&--item {
+				@extend .nav-container__list--software--item;
+				&:hover {
+					background-color: #b767b7;
+				}
+			}
+		}
 
-            &--item {
-                @extend .nav-container__list--software--item;
-                &:hover {
-                    background-color: #67b767;
-                    }
-                }
-            }
-        
-        // Seventh Column
-        
-        &--developer-course {
-            grid-column: 7 / 8;
-            display: inline-block;
+		// Fifth Column
 
-            &--item {
-                @extend .nav-container__list--software--item;
-                &:hover {
-                    background-color: #b7b767;
-                    }
-                }
-            }
-        }
-     }
+		&--web {
+			grid-column: 5 / 6;
+			display: inline-block;
 
+			&--item {
+				@extend .nav-container__list--software--item;
+				&:hover {
+					background-color: #67b7b7;
+				}
+			}
+		}
+
+		// Sixth Column
+
+		&--security {
+			grid-column: 6 / 7;
+			display: inline-block;
+
+			&--item {
+				@extend .nav-container__list--software--item;
+				&:hover {
+					background-color: #67b767;
+				}
+			}
+		}
+
+		// Seventh Column
+
+		&--developer-course {
+			grid-column: 7 / 8;
+			display: inline-block;
+
+			&--item {
+				@extend .nav-container__list--software--item;
+				&:hover {
+					background-color: #b7b767;
+				}
+			}
+		}
+	}
+}
