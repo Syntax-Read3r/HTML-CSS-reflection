@@ -11,22 +11,40 @@
 		justify-content: space-between;
 		padding: 50px 0 0 0;
 
-		& h2 {
+        &--icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+   
+        }
+
+		&--h2 {
 			font-size: 2.25rem;
 			font-weight: 600;
 			margin: 0 0 28px;
 			color: #333645;
 		}
 
-        & h3 {
+        &--h3-container {
+            display: flex;
             margin-bottom: 15px;
             font-size: 1.625rem;
             font-weight: 500;
+
+            &--icon {
+                position: relative;
+                bottom: 5px;                
+            }
 
             &:hover {
                 cursor: pointer;
                 text-decoration: underline;
             }
+
+            &:hover .latestNews__container--header--h3-container--icon {
+                color: $website--colorTwo;
+            }
+       
         }
 	}
 }
