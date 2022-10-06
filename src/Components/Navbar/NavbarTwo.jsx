@@ -98,7 +98,7 @@ function NavbarTwo() {
 						<p className="nav-container__list--it--item--small">IT</p>
 						<p className="nav-container__list--it--item--paragraph">Support</p>
 					</a>
-					<ul className="nav-container__list--it--item--menu">
+					<ul className="nav-container__list--it--menu">
 						<li className="nav-container__list--it--menu--item">
 							<a
 								href="#Managed IT"

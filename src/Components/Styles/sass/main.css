@@ -302,7 +302,6 @@
 }
 .nav-container__list--it--menu {
   background-color: #4183d7;
-  display: block;
 }
 .nav-container__list--it--menu--item--link:hover {
   color: white;

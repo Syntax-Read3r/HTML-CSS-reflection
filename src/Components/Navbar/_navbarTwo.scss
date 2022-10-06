@@ -108,17 +108,15 @@
 			&--menu {
 				@extend .nav-container__list--software--menu;
 				background-color: $website--colorTwo-b;
-				display: block;
-
 				&--item {
 					@extend .nav-container__list--software--menu--item;
 					&--link {
 						@extend .nav-container__list--software--menu--item--link;
 
-                        &:hover {
-                            color: white;
-                            text-decoration: underline;
-                        }
+						&:hover {
+							color: white;
+							text-decoration: underline;
+						}
 					}
 				}
 			}
