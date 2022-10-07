@@ -131,7 +131,7 @@
 			&--item {
 				@extend .nav-container__list--software--item;
 				&:hover {
-					background-color: #b76767;
+					background-color: $website--colorThree;
 				}
 			}
 		}
@@ -144,7 +144,7 @@
 			&--item {
 				@extend .nav-container__list--software--item;
 				&:hover {
-					background-color: #b767b7;
+					background-color: $website--colorFour;
 				}
 			}
 		}
@@ -158,7 +158,7 @@
 			&--item {
 				@extend .nav-container__list--software--item;
 				&:hover {
-					background-color: #67b7b7;
+					background-color: $website--colorFive;
 				}
 			}
 		}
@@ -172,7 +172,7 @@
 			&--item {
 				@extend .nav-container__list--software--item;
 				&:hover {
-					background-color: #67b767;
+					background-color: $website--colorSix;
 				}
 			}
 		}
@@ -186,7 +186,7 @@
 			&--item {
 				@extend .nav-container__list--software--item;
 				&:hover {
-					background-color: #b7b767;
+					background-color: $website--colorSeven;
 				}
 			}
 		}

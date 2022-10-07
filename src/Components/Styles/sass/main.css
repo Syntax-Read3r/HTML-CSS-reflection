@@ -91,6 +91,16 @@
 .btn--trustpilot--reviews:hover {
   background-color: #009b69;
 }
+.btn--latestNews--readMore {
+  height: 45px;
+  line-height: 35px;
+  background-color: #926fb1;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+}
 
 .btn--search--nav {
   background-color: #999aa2;
@@ -312,35 +322,35 @@
   display: inline-block;
 }
 .nav-container__list--digital--item:hover {
-  background-color: #b76767;
+  background-color: #2ecc71;
 }
 .nav-container__list--telecoms {
   grid-column: 4/5;
   display: inline-block;
 }
 .nav-container__list--telecoms--item:hover {
-  background-color: #b767b7;
+  background-color: #d64541;
 }
 .nav-container__list--web {
   grid-column: 5/6;
   display: inline-block;
 }
 .nav-container__list--web--item:hover {
-  background-color: #67b7b7;
+  background-color: #926fb1;
 }
 .nav-container__list--security {
   grid-column: 6/7;
   display: inline-block;
 }
 .nav-container__list--security--item:hover {
-  background-color: #67b767;
+  background-color: #f62459;
 }
 .nav-container__list--developer-course {
   grid-column: 7/8;
   display: inline-block;
 }
 .nav-container__list--developer-course--item:hover {
-  background-color: #b7b767;
+  background-color: #ce4125;
 }
 
 .sideMenu {
@@ -738,6 +748,87 @@ a:link {
   color: #ce4125;
 }
 
+.cardTwo__container {
+  display: block;
+  width: 33.3333333%;
+  position: relative;
+  font-size: 0.8125rem;
+  margin-top: 30px;
+  transition: 0.5s ease;
+  z-index: 1;
+}
+.cardTwo__container--image-container {
+  display: relative;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+.cardTwo__container--image-container--image {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 10;
+}
+.cardTwo__container--body {
+  display: block;
+  border: 1px solid #cbcbcb;
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+.cardTwo__container--body--text-container--h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 15px;
+  color: #926fb1;
+  min-height: 3rem;
+}
+.cardTwo__container--body--text-container--p {
+  line-height: 1.375rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin: 0 0 25px 0;
+  color: #666;
+  min-height: 66px;
+}
+.cardTwo__container--body--horizontal-line-container {
+  margin: 25px 0;
+  height: 1px;
+}
+.cardTwo__container--body--signature-container {
+  display: flex;
+}
+.cardTwo__container--body--signature-container--logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.cardTwo__container--body--signature-container--text-container {
+  display: block;
+  line-height: 1.375rem;
+}
+.cardTwo__container--body--signature-container--text-container--h2 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+.cardTwo__container--body--signature-container--text-container--h3 {
+  font-weight: 400;
+  color: #666;
+}
+.cardTwo__container:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
 .section__awards {
   display: flex;
   width: 100%;
@@ -838,6 +929,7 @@ a:link {
   font-family: "Poppins", sans-serif;
   line-height: 1.1rem;
   letter-spacing: 0.4px;
+  padding-bottom: 15px;
 }
 .latestNews__container--header {
   display: flex;

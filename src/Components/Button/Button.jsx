@@ -8,7 +8,7 @@ const STYLES = [
     "btn--reviews--readMore",
     "btn--google--reviews",
     "btn--trustpilot--reviews",
-    "btn--success--outline",
+    "btn--latestNews--readMore",
 
 ]
 
@@ -20,7 +20,7 @@ const SIZES = [
     'btn--xlarge',
 ]
 
-const Button = ({children, type, onClick, buttonStyle, buttonSize}) => {
+const Button = ({children, type, onClick, buttonStyle, buttonSize, bColor}) => {
 
     // Check if buttonStyle is in STYLES array, if not set to default
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
@@ -29,7 +29,7 @@ const Button = ({children, type, onClick, buttonStyle, buttonSize}) => {
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
     return (
-        <button onClick={onClick} type={type} className={`btn ${checkButtonStyle} ${checkButtonSize}`}>
+        <button onClick={onClick} type={type} className={`btn ${checkButtonStyle} ${checkButtonSize} ${bColor}`}>
             {children}
         </button>
     );
