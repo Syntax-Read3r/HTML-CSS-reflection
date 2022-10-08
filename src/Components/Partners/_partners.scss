@@ -1,0 +1,84 @@
+.partners__container {
+	width: 86%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	padding: 50px 0;
+	border: 1px solid #000;
+	position: relative;
+
+	&--list--item {
+		display: flex;
+		justify-content: center;
+
+		&--description-container {
+			display: flex;
+			justify-content: center;
+			border: 2px solid red;
+			position: absolute;
+			top: -120px;
+			width: 500px;
+			z-index: 100;
+
+			&--box {
+				background-color: $website--bg;
+				color: #fff;
+				padding: 20px;
+				font-size: 0.875rem;
+				max-width: 260px;
+				margin: 0 auto 50px;
+				text-align: center;
+				font-family: $default-font;
+				letter-spacing: 0.4px;
+                position: relative;
+
+				&--header {
+					font-size: 1.125rem;
+					padding-bottom: 17px;
+					margin: 0 0 5px;
+				}
+
+                &--horizontal-line {
+                    display: block;
+                    width: 28px;
+                    height: 3px;
+                    background-color: white;
+                    margin: -5px auto 15px;
+                }
+
+                &--description {
+                    font-size: .8125rem;
+                    line-height: 1.375rem;
+                    margin: 0 0 5px;
+                }
+			}
+		}
+
+		// Beginning of Image Container
+		&--image-container {
+			position: relative;
+			display: block;
+			border: 2px solid blue;
+
+			&--imageOne {
+				position: relative;
+				top: 0;
+				left: 0;
+				height: 70px;
+			}
+
+			&--imageTwo {
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			&:hover .partners__container--list--item--image-container--imageTwo {
+				display: block;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}
