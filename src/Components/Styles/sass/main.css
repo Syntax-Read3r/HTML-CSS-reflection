@@ -1062,4 +1062,9 @@ a:link {
   display: block;
   top: 0;
   left: 0;
+}
+
+.contactUs__container {
+  width: 86%;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

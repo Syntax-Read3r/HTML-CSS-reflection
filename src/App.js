@@ -9,6 +9,7 @@ import Awards from './Components/Awards/Awards';
 import Reviews from './Components/Reviews/Reviews';
 import LatestNews from './Components/LatestNews/LatestNews';
 import Partners from './Components/Partners/Partners';
+import ContactUs from './Components/ContactUs/ContactUs';
 // import SideMenu from './Components/SideMenu/SideMenu';
 
 
@@ -24,6 +25,7 @@ function App() {
       <Reviews />
       <LatestNews />
       <Partners />
+      <ContactUs />
       {/* <Footer /> */}
     </div>
   );
