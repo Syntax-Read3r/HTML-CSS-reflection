@@ -9,7 +9,7 @@ const STYLES = [
     "btn--google--reviews",
     "btn--trustpilot--reviews",
     "btn--latestNews--readMore",
-
+    'btn--submit--contactUs',
 ]
 
 const SIZES = [
