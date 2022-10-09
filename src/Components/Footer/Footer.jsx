@@ -169,16 +169,16 @@ function Footer() {
              
                     </div>
                     <div className="container__bottom-row--content--socials">
-                        <a href="https://en-gb.facebook.com/netmatters/" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><ImFacebook
+                        <a href="h#facebook" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><ImFacebook
                         className="container__bottom-row--content--socials--icon--one"/></a>
                         
-                        <a href="https://twitter.com/netmattersltd" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><BsTwitter
+                        <a href="twitter" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><BsTwitter
                         className="container__bottom-row--content--socials--icon--two"/></a> 
                         
-                        <a href="https://www.instagram.com/netmattersltd/" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><GrInstagram
+                        <a href="Instagram" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><GrInstagram
                         className="container__bottom-row--content--socials--icon--three"/></a> 
                         
-                        <a href="https://www.linkedin.com/company/netmatters-ltd/" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><GrLinkedinOption
+                        <a href="#instagram" rel="noopener noreferrer" className="container__bottom-row--content--socials--icon"><GrLinkedinOption
                         className="container__bottom-row--content--socials--icon--four" /></a>
                     </div>
                 </div>
