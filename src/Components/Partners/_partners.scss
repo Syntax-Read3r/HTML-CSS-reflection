@@ -4,80 +4,103 @@
 	display: flex;
 	justify-content: center;
 	padding: 50px 0;
-	border: 1px solid #000;
+	// border: 1px solid #000;
 	position: relative;
 
-	&--list--item {
+	&--list {
 		display: flex;
 		justify-content: center;
-
-		&--description-container {
+		flex-grow: 1;
+		&--item {
 			display: flex;
-			justify-content: center;
-			border: 2px solid red;
-			position: absolute;
-			top: -120px;
-			width: 500px;
-			z-index: 100;
+			justify-content: space-around;
+			flex-grow: 1;
 
-			&--box {
-				background-color: $website--bg;
-				color: #fff;
-				padding: 20px;
-				font-size: 0.875rem;
-				max-width: 260px;
-				margin: 0 auto 50px;
-				text-align: center;
-				font-family: $default-font;
-				letter-spacing: 0.4px;
-                position: relative;
+			&:hover .partners__container--list--item--description-container--box {
+				display: block;
+			}
 
-				&--header {
-					font-size: 1.125rem;
-					padding-bottom: 17px;
-					margin: 0 0 5px;
+			&--description-container {
+				display: flex;
+				justify-content: center;
+				// border: 2px solid red;
+				position: absolute;
+				top: -145px;
+				width: 500px;
+				z-index: 100;
+
+				&--box {
+					display: none;
+					background-color: $website--bg;
+					color: #fff;
+					padding: 20px;
+					font-size: 0.875rem;
+					max-width: 260px;
+					margin: 0 auto 50px;
+					text-align: center;
+					font-family: $default-font;
+					letter-spacing: 0.4px;
+					position: relative;
+
+					&--header {
+						font-size: 1.125rem;
+						padding-bottom: 17px;
+						margin: 0 0 5px;
+					}
+
+					&--horizontal-line {
+						display: block;
+						width: 28px;
+						height: 3px;
+						background-color: white;
+						margin: -5px auto 15px;
+					}
+
+					&--description {
+						font-size: 0.8125rem;
+						line-height: 1.375rem;
+						margin: 0 0 5px;
+					}
+
+					// make a triangle using &--triangle
+					&--triangle {
+						position: absolute;
+						bottom: -35px;
+						left: 110px;
+						border-top: 35px solid $website--bg;
+						border-right: 36px solid transparent;
+						border-left: 36px solid transparent;
+					}
+				}
+			}
+
+			// Beginning of Image Container
+			&--image-container {
+				position: relative;
+				display: block;
+				// border: 2px solid blue;
+
+				&--imageOne {
+					position: relative;
+					top: 0;
+					left: 0;
+					height: 70px;
 				}
 
-                &--horizontal-line {
-                    display: block;
-                    width: 28px;
-                    height: 3px;
-                    background-color: white;
-                    margin: -5px auto 15px;
-                }
+				&--imageTwo {
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
 
-                &--description {
-                    font-size: .8125rem;
-                    line-height: 1.375rem;
-                    margin: 0 0 5px;
-                }
-			}
-		}
+				&:hover .partners__container--list--item--image-container--imageTwo {
+					display: block;
+					top: 0;
+					left: 0;
+				}
 
-		// Beginning of Image Container
-		&--image-container {
-			position: relative;
-			display: block;
-			border: 2px solid blue;
-
-			&--imageOne {
-				position: relative;
-				top: 0;
-				left: 0;
-				height: 70px;
-			}
-
-			&--imageTwo {
-				display: none;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-
-			&:hover .partners__container--list--item--image-container--imageTwo {
-				display: block;
-				top: 0;
-				left: 0;
+				
 			}
 		}
 	}
